@@ -20,6 +20,9 @@ The analysis is organized into separate R scripts:
 
 All outputs are saved in the `output/` folder and compiled into the final HTML report.
 
+## Add these packages:
+install.packages(c("tidyverse", "kableExtra"))
+
 ## How to generate the final report
 
 Run:
