@@ -23,10 +23,23 @@ All outputs are saved in the `output/` folder and compiled into the final HTML r
 ## Add these packages:
 install.packages(c("tidyverse", "kableExtra"))
 
+## Synchronizing the package environment
+
+This project uses [`renv`](https://rstudio.github.io/renv/) to manage package 
+dependencies. To install all required packages at the correct versions, run from 
+your terminal:
+
+```bash
+make install
+```
+
+This runs `renv::restore()` using the `renv.lock` file included in this repository.
+
 ## How to generate the final report
 
 Run:
 
 ```bash
 make
+```
 

@@ -18,5 +18,8 @@ output/model.rds: R/05_model.R output/clean_data.rds
 final_report.html: final_report.Rmd output/table1.rds output/figure1.png output/model.rds
 	Rscript -e "rmarkdown::render('final_report.Rmd')"
 
+install:
+	Rscript -e "renv::restore()"
+
 clean:
 	rm -f output/*.rds output/*.png final_report.html
