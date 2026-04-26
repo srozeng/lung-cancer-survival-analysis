@@ -23,3 +23,9 @@ install:
 
 clean:
 	rm -f output/*.rds output/*.png final_report.html
+	
+docker-report:
+	mkdir -p report
+	docker run --rm -v "$$(pwd)/report":/home/rstudio/project/report srozeng/lung-cancer-survival-analysis
+	
+	

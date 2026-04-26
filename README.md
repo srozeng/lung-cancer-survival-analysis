@@ -43,3 +43,20 @@ Run:
 make
 ```
 
+## Docker Instructions
+
+### Build the Docker image
+
+docker build -t srozeng/lung-cancer-survival-analysis .
+
+### DockerHub image
+
+https://hub.docker.com/r/srozeng/lung-cancer-survival-analysis
+
+### Run the automated report
+
+make docker-report
+
+This command creates a local `report` folder and saves the compiled `final_report.html` file there.
+
+
